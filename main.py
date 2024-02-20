@@ -7,4 +7,6 @@ import seaborn as sns
 import os
 
 df_claims_and_patients = pd.read_csv("/Users/manayapachpor/Desktop/Trinity_Hackathon/claims_and_patient.csv.xlsx")
-df_
+
+
+avg_age_by_drug = df_claims_and_patients.groupby('drug_name')['patient_age'].mean()
